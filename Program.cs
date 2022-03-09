@@ -1,8 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace arrays
 {
@@ -10,19 +5,34 @@ namespace arrays
     {
         static void Main(string[] args)
         {
-            int[] noten = { 1, 2, 3, 4, 5, 6 };
-            float anzahlschueler = 20;
+            int Note = 0;
+            int anzahlschueler = 20;
+            
+            int[] noten = new int[anzahlschueler];
+            
             int Notensumme = 0;
-
-            for (int i = 0; i < 6;  ++i);
-
+            
+            for (int anzahlSchul = 0; anzahlSchul < anzahlschueler; anzahlSchul++)
             {
+                int Anzah = 0;
+
                 
-                Notensumme = noten = *(noten );
+                Console.WriteLine("Schüler {0}", anzahlSchul);
+                
+
+
+                Note = Convert.ToInt32(Console.ReadLine());
+                noten[anzahlSchul] = Note;
+
+                noten[anzahlSchul] = Note;
+                Notensumme = Notensumme + Note;
+                
             }
+
             float NotenDurch = 0f;
             NotenDurch = Notensumme / anzahlschueler;
             Console.WriteLine("Der Noten durchschnitt liegt bei:" + NotenDurch);
+             //deniz kartal und murtaza behzad
         }
     }
 }
